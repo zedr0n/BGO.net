@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "BoardGame/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BoardGame.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoardGame.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BoardGame/1.0.0": {
+      "type": "project",
+      "path": "../BoardGame/BoardGame.csproj",
+      "msbuildProject": "../BoardGame/BoardGame.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "BoardGame >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\dev\\BGO.NET\\Genetic\\Genetic.csproj",
+      "projectName": "Genetic",
+      "projectPath": "D:\\dev\\BGO.NET\\Genetic\\Genetic.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "D:\\dev\\BGO.NET\\Genetic\\obj\\",
+      "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "d:\\nuget": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://ci.appveyor.com/nuget/zinnos": {},
+        "https://www.myget.org/F/zinnos-public": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\dev\\BGO.NET\\BoardGame\\BoardGame.csproj": {
+              "projectPath": "D:\\dev\\BGO.NET\\BoardGame\\BoardGame.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
