@@ -1,0 +1,25 @@
+version: 1.0.{build}
+image: Visual Studio 2022
+
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+
+before_build:
+  - cmd: dotnet restore --verbosity m
+build:
+  project: BGO.NET.sln
+  verbosity: minimal
+  publish_nuget: false             # package projects with .nuspec files and push to artifacts
+test_script:
+  - cmd: dotnet test --no-build 
+on_failure:
+# Cache node modules, and refresh if package.json changes
+cache:
+#- node_modules -> package.json
+artifacts:
+nuget:
+  project_feed: true
+install:
